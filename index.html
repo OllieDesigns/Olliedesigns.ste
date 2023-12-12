@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ollie Cline">
+    <meta name="description" content="Home page to my portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+    <title>Ollie Designs</title>
+    <link rel="shortcut icon" type="image/png" href="img/fav/favicon.png"/>
+  </head>
+  <body id="index">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                 <img src="img/logo/ollie_designs_logo_x2.jpg" class="logo" alt="Logo">
+                </a>
+                <nav>
+                  <ul class="navigation">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li><a href="files/ollie_cline_resume.pdf" target="_blank">Resume</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+		</div>
+	</header>
+
+    <main>
+        <!-- For the hero section -->
+        <div id="hero">
+            <div class="container">
+                <h1>Hi! My name is Ollie.</h1>
+                <h2 class="h3">My passion lies in creating well designed, accessible and engaging experiences in both UX design and food.</h2>
+            </div>
+        </div>
+
+        <!-- For your work/projects -->
+        <div id="work">
+            <div class="container">
+                <div>
+                    <h2>My Work</h2>
+                </div>
+                <!--Project One-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="img/ripple/ripple_banner_1x.jpg" media="(max-width:767px)">
+                      <img src="img/ripple/ripple_banner_1x.jpg" alt="My Image">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>Ripple</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      A holistic health monitoring app for people who want to understand their health and habits in an organized and accessible way.
+                    </p><!-- end paragraph -->
+                    <p>
+                      Skills used in creating Ripple range from thorough research and analysis with in person interviews to mockup and prototype creation via Figma
+                    </p>
+                    <a href="ripple.html" class="button contact">Case Study</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+                
+                <!--Project Two-->
+                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
+                  <div class="column col-md-6 col-lg-7"><!-- open first column (used for image) -->
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="img/portfolio/logo.jpg" media="(max-width:767px)">
+                      <img src="img/portfolio/logo.jpg" alt="Ollie Designs logo">
+                    </picture>
+                  </div><!-- end first column -->
+                  <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
+                    <h3>Portfolio Site</h3><!-- heading for the project -->
+                    <p><!-- open paragraph -->
+                      Frontend development for my personal portfolio site.
+                    </p><!-- end paragraph -->
+                    <p>
+                      Learned HTML, CSS, JS basics and principals of softrware craftsmanship
+                    </p>
+                    <a href="portfolio.html" class="button contact">Case Study</a><!-- button or link label -->
+                  </div><!-- end second column -->
+                </div><!-- end row that holds (2) columns for project -->
+            </div>
+        </div>
+    </main>
+
+
+<!-- For the footer  -->
+<footer id="contact" style="clear: both;">
+  <div class="container">
+          <h2>Let's talk!</h2>
+          <p>If you like my work and would like to discuss opportunities, send me an email at <a href="mailto:olscline@gmail.com?subject=Let's%20chat!&body=Project%20inquiry" class="a footer">olscline@gmail.com</a></p> 
+          <a href="https://www.linkedin.com/in/ollie-cline-50a5b01ba/" target="_blank">
+                  <!--linkedin icon-->
+                  <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" viewBox="0 0 32 32" width="32px"
+                      xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g>
+                          <path
+                              d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                              fill="#007BB5" />
+                          <g>
+                              <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                              <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7   
+C25,14,24.479,11,20.499,11z" fill="#FFFFFF" />
+                              <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                          </g>
+                      </g>
+                      <g />
+                      <g />
+                      <g />
+                      <g />
+                      <g />
+                      <g />
+                  </svg>
+              </a>
+          <p>Copyright Ollie Cline 2023</p>
+      </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ollie Cline">
+    <meta name="description" content="Project page to my portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+    <title>Ripple Case Study</title>
+  </head>
+  <body id="body">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                 <img src="img/logo/ollie_designs_logo_x2.jpg" class="logo" alt="Logo">
+                </a>
+                <nav>
+                  <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li><a href="files/ollie_cline_resume.pdf" target="_blank">Resume</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+		</div>
+	</header>
+
+    <main>
+        <section id="top" class="container">
+            <h2>Ripple</h2>
+            <picture>
+                <source srcset="img/ripple/mockup_display_2x.jpg" media="(max-width:767px)">
+                <img src="img/ripple/mockup_display_2x.jpg" alt="ripple mockup
+                display">
+            </picture>
+            <div class="row">
+                <p>Ripple is an app designed to help users build habits and take
+                    control of their mental, emotional, and physical health.
+                </p>
+            </div>
+            <div>
+                <h3>Case Contents</h3>
+                <p>An overview of the general process</p>
+                <ul>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#ideation">Ideation</a></li>
+                    <li><a href="#wireframing">Wireframing</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#prototype">Prototyping</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--research section START-->
+        <section id="research" class="container">
+            <h3>Research</h3>
+            <div>
+                <picture>
+                    <source srcset="img/ripple/research_2x.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/research_2x.jpg" alt="popular mental health app logos">
+                </picture>
+                <div>
+                    <p>Reasearch was conducted throughout the process of designing Ripple but started with a
+                        competitive analysis of four different popular mental health apps to assess any gaps
+                        in the market and the apps' weaknesses. Following initial research, goals and associated
+                        customer and stakeholder needs were addressed in a business requirements document. User
+                        interviews were also used to form a basis for user personas and their associated journeys.
+                    </p>
+                    <a href="files/brd_ripple.pdf" target="_blank" download class="button contact">View BRD</a>
+                </div>
+            </div>
+        </section>
+        <!--research section END-->
+
+        <!--Ideation section START-->
+        <section id="ideation" class="container">
+            <h3>Ideation</h3>
+            <div>
+                <p> Based on the information gathered in the research phase, an initial sitemap was created in based
+                    on the initial low fidelity wireframe sketches. The sitemap was then improved via cards sorts in
+                    OptimalSort
+                    with five participants. Following the created of the updated sitemap, low fidelity wireframes
+                    reflecting the
+                    new sitemap were drafted and highlighted to show user paths.
+                </p>
+
+                <picture>
+                    <source srcset="img/ripple/ideation_sitemap_1_2x.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/ideation_sitemap_1_2x.jpg" alt="initial sitemap">
+                </picture>
+                <p><i>The initial sitemap.</i></p>
+
+                <picture>
+                    <source srcset="img/ripple/ideation_sitemap_2_2x.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/ideation_sitemap_2_2x.jpg" alt="updated sitemap">
+                </picture>
+                <p><i>The updated sitemap reflecting input from card sorting.</i></p>
+
+                <p>Low fidelity wireframes were drafted to reflect three of Ripple's main functions. Habit tracking,
+                    document library, and appointment calendar.
+                </p>
+
+                <picture>
+                    <source srcset="img/ripple/appt_lf.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/appt_lf.jpg" alt="anticipated user journey for appointment function">
+                </picture>
+                <p><i>Anticipated user journey for appointment function.</i></p>
+
+                <picture>
+                    <source srcset="img/ripple/docs_lf.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/docs_lf.jpg" alt="anticipated user journey for document library">
+                </picture>
+                <p><i>Anticipated user journey for the document library function.</i></p>
+
+                <picture>
+                    <source srcset="img/ripple/habit_lf.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/habit_lf.jpg" alt="anticipated user journey for habit function">
+                </picture>
+                <p><i>Anticipated user journey for the habit function.</i></p>
+            </div>
+        </section>
+        <!--ideation section END-->
+
+        <!--wireframing section START-->
+        <section id="wireframing" class="container">
+            <h3>Wireframing</h3>
+            <div>
+                <p>Low fidelity wireframes were initially created using paper and pencil as a basis for iterations. With
+                    the progression of the wireframes and additional research, the main functions of Ripple changed to
+                    remove the analytics functions in favor of a more clearly defined and dedicated habit tracking
+                    function.
+                    During user interviews, interviewees mentioned being unmotivated by analytical pages that are too
+                    upfront
+                    and wanting more focus on an expanded habit section in order to stay focused and motivated.
+                </p>
+                <picture>
+                    <source srcset="img/ripple/wireframes_2x.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/wireframes_2x.jpg"
+                        alt="progression from low fidelity wireframes to final high fidelity mockup">
+                </picture>
+                <p><i>Both mid and high fidelity wireframes were created in Figma, while all low fidelity iterations
+                        were drafted on paper and later on Procreate.</i></p>
+            </div>
+        </section>
+        <!--wireframing section END-->
+
+        <!--design section START-->
+        <section id="design" class="container">
+            <h3>Design</h3>
+            <div>
+                <p>In order to produce a pixel perfect and cohesive application, a style guide was created and
+                    implemented.
+                    The style guide contains not only colors and logo design, but any other elements spanning from
+                    buttons, to fonts and images.
+                </p>
+                <picture>
+                    <source srcset="img/ripple/design_2x.jpg" media="(max-width:767px)">
+                    <img src="img/ripple/design_2x.jpg"
+                        alt="style guide pager covering colors and logo design for Ripple">
+                </picture>
+                <p><i>Style guide referring to colors and logo design</i></p>
+                <a href="files/style_guide.pdf" target="_blank" download>View the full style guide here</a>
+            </div>
+        </section>
+        <!--design section END-->
+
+        <!--prototype section START-->
+        <section id="prototype" class="container">
+            <h3>Prototyping</h3>
+            <div>
+                <a href="https://www.figma.com/proto/VDHYysSuXL6FpBGDsVGuUn/Ripple_2.0-Proto?page-id=0%3A1&type=design&node-id=1-2637&viewport=739%2C492%2C0.1&t=LQbpkV6GZHFm0i9w-1&scaling=min-zoom&starting-point-node-id=1%3A2637&show-proto-sidebar=1&mode=design"
+                    target="_blank" class="button contact">Click to view Figma prototype</a>
+            </div>
+        </section>
+        <!--prototype section END-->
+
+        <!--conclusion section START-->
+        <section id="Conclusion" class="container">
+            <h3>Conclusion</h3>
+            <div>
+                <div>
+                    <h4>Additional Hypotheses</h4>
+                    <ul>
+                        <li>Offer option to select an appointment to be associared with a document when uploading said
+                            document. The objective is to
+                            making finding a specific document easer for users; redusing user frustration and cognitive
+                            load
+                        </li>
+                        <li>Offer a tagging system for appointments and documentas that can be searched or selected from
+                            a list for
+                            ease of access. The objective is to make finding a specific item easily achievable by
+                            allowing users to
+                            search items grouped by tags.
+                        </li>
+                        <li>Revise document search UI. The objective is to create a UI that uses hierarcyh and floating
+                            action buttons effectively
+                            to clearly indicate what actions a user should take in order to search their documents.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>User Orientated Improvements</h4>
+                    <ul>
+                        <li>Add a comprehensive progrssive onborading throughout the application to clearly explain
+                            functions.
+                            Additionally add option to reset tutorial or dismiss completely for certain areas and
+                            functions of the application.
+                        </li>
+                        <li>Add mental health resources section for users needing specific access to verified treatment
+                            options and resources.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Further Testing</h4>
+                    <ul>
+                        <li>Further testing will evolve by focusing less on adding new functions and more on deep
+                            refinement of existing functions
+                            via task testing. Among other items, details such as accessibility, contrast, and verbiage
+                            would be further improved upon.
+                        </li>
+                        <li>Ripple would benefit from additional quantitative data which would be accumulated via
+                            further user interviews in order to
+                            understand more about the target audience, their needs, behaviors, and goals and how those
+                            change over time.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--conclusion section END-->
+
+        <div class="container">
+            <p><i>fin.</i></p>
+            <div>
+                <a href="#top"></a><a href="#" class="button contact">Return to Top</a>
+            </div>
+        </div>
+    </main>
+
+<!-- For the footer  -->
+<footer id="contact" style="clear: both;">
+    <div class="container">
+        <h2>Let's talk!</h2>
+        <p>If you like my work and would like to discuss opportunities, send me an email at <a href="mailto:olscline@gmail.com?subject=Let's%20chat!&body=Project%20inquiry" class="a footer">olscline@gmail.com</a></p> 
+        <a href="https://www.linkedin.com/in/ollie-cline-50a5b01ba/" target="_blank">
+                <!--linkedin icon-->
+                <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" viewBox="0 0 32 32" width="32px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <path
+                            d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                            fill="#007BB5" />
+                        <g>
+                            <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                            <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7   
+C25,14,24.479,11,20.499,11z" fill="#FFFFFF" />
+                            <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                        </g>
+                    </g>
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                </svg>
+            </a>
+        <p>Copyright Ollie Cline 2023</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

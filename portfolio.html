@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">    
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ollie Cline">
+    <meta name="description" content="Project page to my portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+    <title>Portfolio Site Case Study</title>
+  </head>
+  <body id="body">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html">
+                 <img src="img/logo/ollie_designs_logo_x2.jpg" class="logo" alt="Logo">
+                </a>
+                <nav>
+                  <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li><a href="files/ollie_cline_resume.pdf" target="_blank">Resume</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+		</div>
+	</header>
+
+    <main>
+        <section id="top" class="container">
+            <h2>Portfolio Site</h2>
+            <picture>
+                <source srcset="img/logo/ollie_designs_logo_x2.jpg" media="(max-width:300px)">
+                <img src="img/logo/ollie_designs_logo_x2.jpg" class="hero img" alt="Ollie designs portfolio logo">
+            </picture>
+            <div class="row">
+                <p>The opportunity to learn about front end web development has allowed better understanding of the languages making up 
+                    products I design. Additionally, the chance to create my own portfolio website gave much needed insight into code 
+                    limitations, capabilities, and errors to be considered while designing in collaboration with a front end development 
+                    team. Moreover this project has served as an opportunity to refine what I want from my portfolio site and the 
+                    impression I want to give to anyone interested in my work. 
+                </p>
+            </div>
+            <div>
+                <h3>Case Contents</h3>
+                <p>An overview of the general process</p>
+                <ul>
+                    <li><a href="#problem">Problem | Context | Goals</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#html">HTML Process</a></li>
+                    <li><a href="#css">CSS Process</a></li>
+                    <li><a href="#js">JS Process</a></li>
+                    <li><a href="#usability">Usability Testing</a></li>
+                    <li><a href="#browser">Browser Testing</a></li>
+                    <li><a href="#code">Code Quality</a></li>
+                    <li><a href="#launch">Launch</a></li>
+                    <li><a href="#future">Future Changes</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!--problem section START-->
+        <section id="problem" class="container">
+            <h3>Problem | Context | Goals</h3>
+                <div>
+                    <h4> Problem</h4>
+                        <p>As a UX professional I need a way to showcase and explain my projects in an engaging and narrative way in order 
+                            to market myself and my skills. Having an easily accessible, well designed and professional website allows anyone 
+                            to view my work with explanation into my design decisions and creative concept.</p>
+                </div>
+                <div>
+                    <h4>Context</h4>
+                        <p>As a supplementary part to my UX design course, the front end development for designers allows better understanding of 
+                            HTML, CSS, and JS in the context of front end development, design limitation and capabilities from a UX and dev 
+                            perspective.</p>
+                </div>
+                <div>
+                    <h4>Goals</h4>
+                        <li>Live, fully functional website</li>
+                        <li>Well formatted, easily readable code</li>
+                        <li>Responsive design</li>
+                </div>
+        </section>
+
+        <!--research section START-->
+        <section id="research" class="container">
+            <h3>Research</h3>
+            <div>
+                <p>When searching for UX portfolios that I liked and wanted to aspire to, I found that I leaned towards visually striking portfolios with visual personality and 
+                    compelling story. Rather than relying on maximal information, I also found that I enjoyed more minimalistic portfolios with emphasis on quality of information 
+                    rather than quantity. 
+                </p>
+                <p>During the creation of my initial portfolio and while creating my current portfolio I realized that I was providing an overwhelming amount of information but 
+                    lacking quality information. In my second attempt I cut down on the information supplied and focused on design decisions. </p>                
+            </div>
+            <div>
+                <picture>
+                    <source srcset="img/portfolio/pics/good_portfolio.jpg" media="(max-width:767px)">
+                    <img src="img/portfolio/pics/good_portfolio.jpg" alt="clear navigation, hierarchy, compelling intro, clean design, contact info">
+                <div class="italic">
+                    <p><i>What makes a good portfolio?</i></p>
+                </div>                   
+                </picture>
+            </div>
+        </section>
+
+        <!--design section START-->
+        <section id="design" class="container">
+            <h3>Design</h3>
+            <div>
+                <p>Based on my UX project; Ripple I wanted a design that was fairly minimalist with vibrant colors. I chose a contrasting color scheme and incorporated a more
+                     artsy feel to my logo that reflects more of my personality.
+                </p>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="img/portfolio/pics/logo_colors.jpg">
+                    <img src="img/portfolio/pics/logo_colors.jpg"
+                        alt="Ollie Designs logo with stars of various sizes; color scheme of cream:#f9f5e9 dark blue:#07214b muted gold:#f5bc5a">
+                </picture> 
+            </div>
+        </section>
+
+        <!--html section START-->
+        <section id="html" class="container">
+            <h3>HTML Process</h3>
+            <div>
+                <p>Starting with a blank slate in VScode I followed provided instructions to create my index.html page using HTML5.
+                </p>
+                <p>Through the CF instructions I was able to slowly build the basic HTML infrastructure for the work section, footer, and about page.  Once I started 
+                    getting more comfortable with HTML I added a resume option in the navigation bar based on user feedback. </p>
+                <p>During this stage I struggled with understanding how HTML was actually formatted-- initially I didn’t understand the indentation 
+                    style but this was resolved by talking about it with my mentor, </p>
+            <div class="img portfolio">
+                <picture class="img portfolio">
+                    <source srcset="img/portfolio/pics/html.jpg" media="(max-width:767px)">
+                    <img src="img/portfolio/pics/html.jpg"
+                        alt="Snapshot of HTML from portfolio website">
+                </picture>
+            </div>    
+                <div class="italic">
+                    <p><i>Snapshot of HTML code for my portfolio website</i></p>
+                </div>
+            </div>
+        </section>
+
+        <!--css section START-->
+        <section id="css" class="container">
+            <h3>CSS Process</h3>
+            <div>
+                <p>For styling colors, text, columns and rows I utilized an external CSS document as opposed to inline CSS for readability</p>
+                <p>With CSS in specific there was a lot of trial and error in getting buttons to react in the way I wanted. Additionally, I struggled with
+                 media queries. With help I figured out how to optimize for display size and writing rules that would effect specific parts of the website. </p>
+            </div>
+            <div class="gif">
+                <img src="img/portfolio/gifs/button_states.gif" alt="button states"> 
+            </div>            
+        </section>
+
+        <!--js section START-->
+        <section id="js" class="container">
+            <h3>JS Process</h3>
+            <div>
+                <p> In all honesty I had had little to no idea what JS did for websites.  Understanding how JS adds fundamental website behavior and 
+                    more complex features is crucial when designing and coding responsive websites. Especially now when most people use two or more 
+                    devices of different sizes.
+                </p>
+                <p>In my portfolio site JS was used exclusively to add responsive design to the navigation menu for better user experience while on a
+                     mobile device.
+                </p>
+            </div>
+            <div class="gif">
+                <img src="img/portfolio/gifs/condensed.gif" alt="responsive design in action"> 
+            </div>  
+            <div class="italic">
+                <p><i>Responsive design in action</i></p>
+            </div>
+        </section>
+
+        <!--usability section START-->
+        <section id="usability" class="container">
+            <h3>Usability Testing</h3>
+                <div>
+                    <div>
+                        <p>Usability testing was completed with 5 people in the age range of 21-32 who are comfortable with technology.</p>
+                        <p>I asked each person to complete three different tasks to determine how clear the navigation and visual hierarchy 
+                            is on my portfolio site. I also asked 5 personal questions to determine their relationship and comfort level with
+                            technology. The tasks were followed by four questions pertaining to the difficulty and mental chatter they experienced. </p>
+                        <p> Overall testers were able to navigate the site very easily. There were some issues and questions surrounding where
+                            the resume is on the website so I added a link to a PDF version in different spots. Additionally, I changed “work” to “home”. </p>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="img/portfolio/pics/usability_people.jpg" media="(max-width:767px)">
+                            <img src="img/portfolio/pics/usability_people.jpg"
+                                alt="Demographics of testers">
+                        </picture>
+                        <div class="italic"><i>Tester demographics</i></div>
+                        <picture>
+                            <source srcset="img/portfolio/pics/usability_results.jpg" media="(max-width:767px)">
+                            <img src="img/portfolio/pics/usability_results.jpg"
+                                alt="Usability testing results">
+                        </picture>
+                        <div class="italic"><i>Usability testing results</i></div>
+                    </div>
+                </div>    
+        </section>    
+
+        <!--browser section START-->
+        <section id="browser" class="container">
+            <h3>Cross Browser Testing</h3>
+                <div>
+                    <p>Using BrowserStack I checked to see if my website would work on different browsers and devices. The only issue I had was the Ripple case
+                     study menu not being responsive. This turned out to be a simple code issue. Otherwise nothing came up for other devices and browsers. </p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="img/portfolio/pics/testing.jpg" media="(max-width:767px)">
+                        <img src="img/portfolio/pics/testing.jpg"
+                            alt="Cross browser testing results">
+                    </picture>                    
+                </div>
+                <div>
+                    
+                </div>
+        </section>
+        
+        <!--code section START-->
+        <section id="code" class="container">
+            <h3>Code Quality and Linters</h3>
+                <div>
+                    <p> In order to check and double check my code for quality, readability, and organization I opted to install four different code linters. Although
+                         Stylelint and StandardJS threw errors I didn’t really understand I was able to resolve the errors via a different Javascript validator (JS Validator) 
+                         and the CSS validator from W3C. Otherwise I checked my HTML via the W3C markup validation.</p>
+                    <p> I also checked accessibility with my color scheme and got a minimum rating of 8.69 and a maximum of 15.81, both of which are AA quality.</p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="img/portfolio/pics/linter.jpg" media="(max-width:400px)">
+                        <img src="img/portfolio/pics/linter.jpg"
+                            alt="Code linters">
+                    </picture>
+                        <div class="italic">
+                            <p><i>Code linters used to standardize and catch errors</i></p>
+                        </div>
+                    <picture class="img portfolio">
+                        <source srcset="img/portfolio/pics/access.jpg" media="(max-width:767px)">
+                        <img src="img/portfolio/pics/access.jpg"
+                            alt="testing accessibility of text and background colors">
+                    </picture>
+                        <div class="italic">
+                            <p><i>Testing the accessibility ratio of the background and text colors</i></p>
+                        </div>                                        
+                </div>
+        </section> 
+        
+        <!--launch section START-->
+        <section id="launch" class="container">
+            <h3>Launch</h3>
+                <div>
+                    <p>After many checks and rechecks I finally felt ready to launch my website. My goal of creating a easily accessible, well designed and professional 
+                        website is almost fully realized. There are still some changes I want to push content and design wise but for the moment (and the sake of time) I’m 
+                        very pleased overall with the quality and content I’ve managed to produce. The front end development course was very challenging for me but I’m still
+                        looking forward to practicing website development alongside UX.</p>
+                </div>
+                <div>
+                    <a href="https://github.com/OllieDesigns/CF_portfolio" class="button contact" target="_blank">Github Repository</a>                    
+                </div>
+        </section>        
+
+        <!--future section START-->
+        <section id="future" class="container">
+            <h3>Future Changes</h3>
+                <div>
+                    <p>While I do think my portfolio site is “good enough” at the moment there are several things I hope to accomplish over the next couple weeks. These 
+                        tasks are listed most to least important based on user feedback from my user tests and things I’ve seen on other design portfolios that I’ve really 
+                        liked. As I want this to become my permanent portfolio I hope to continually improve it and learn by doing so.</p>
+                </div>
+                <div>
+                    <ol>
+                        <li>Revisit "about" page layout and columns</li>
+                        <li>Revisit Ripple case study to reflect quality over quantity (elaborate and explain)</li>
+                        <li>Add portfolio site case study</li>
+                        <li>Add vocang case study</li>
+                        <li>Swap temporary domain for current domain and deactivate former portfolio site</li>
+                        <li>Update resume to reflect current</li>
+                        <li>Remove CSS animation</li>
+                        <li>Adjust footer layout to two column</li>
+                        <li>Consider changing homepage layout to carousel vs. rows</li>
+                        <li>Add categories referring to development or design</li>
+                        <li>Revisit adding passion project and hobby table</li>
+                    </ol>
+                </div>
+                <div>
+                    
+                </div>
+        </section>    
+                
+        <div class="container">
+            <p><i>fin.</i></p>
+            <div>
+                <a href="#top"></a><a href="#" class="button contact">Return to Top</a>
+            </div>
+        </div>
+    </main>
+
+<!-- For the footer  -->
+<footer id="contact" style="clear: both;">
+    <div class="container">
+        <h2>Let's talk!</h2>
+        <p>If you like my work and would like to discuss opportunities, send me an email at <a href="mailto:olscline@gmail.com?subject=Let's%20chat!&body=Project%20inquiry" class="a footer">olscline@gmail.com</a></p> 
+        <a href="https://www.linkedin.com/in/ollie-cline-50a5b01ba/" target="_blank">
+                <!--linkedin icon-->
+                <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" viewBox="0 0 32 32" width="32px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <path
+                            d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                            fill="#007BB5" />
+                        <g>
+                            <rect fill="#FFFFFF" height="14" width="4" x="7" y="11" />
+                            <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7   
+C25,14,24.479,11,20.499,11z" fill="#FFFFFF" />
+                            <circle cx="9" cy="8" fill="#FFFFFF" r="2" />
+                        </g>
+                    </g>
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                    <g />
+                </svg>
+            </a>
+        <p>Copyright Ollie Cline 2023</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
